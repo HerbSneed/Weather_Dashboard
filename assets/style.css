@@ -28,7 +28,6 @@ h4{
 .citySearch{
   width: 25%;
   height: 100vh;
-  border: 2px solid black;
   padding: 5px 5px;
 }
 
@@ -66,7 +65,7 @@ h4{
   margin-top: 10px;
   padding: 5px;
   width: 100%;
-  border: 2px solid black;
+  border: 1.5px solid black;
   height: 120px;
 }
 
