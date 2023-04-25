@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link href="./assets/reset.css" rel="stylesheet">
+  <link href="./assets/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="weather_header">
+    <h1>Weather Dashboard</h1>
+  </header>
+  <main class="container">
+    <div class="citySearch">
+      <form>
+        <h2>Search for a City</h2>
+        <input type="text">
+        <button id="searchSubbtnJS" type="submit">Search</button>
+      </form>
+      <div id="searchContainerJS">
+      <hr>
+      <div class="city" id="cityJS">Atlanta</div>
+    </div>
+    </div>
+    <div class="cityInfoContainer">
+      <div class="cityInfo" id="cityInfoJS">
+        <h2 id="city">Greenville, NC <span id="date">(4/25/2023)</span></h2>
+        <p>Temp: <span id="temp">76.62°F</span></p>
+        <p>Wind: <span id="wind">8.46 MPH</span></p>
+        <p>Humidity: <span id="humidity">44%</span>
+      </div>
+      <h3>5 - Day Forcast</h3>
+      <div class="fiveDay" id="fiveDayJS">
+        <div class="forcast" id="day01">
+          <h4 id="date">4/25/2023</h4>
+          <h4 class="icon" id="icon">ICON</h4>
+          <p>Temp: <span id="temp">76.62°F</span></p>
+          <p>Wind: <span id="wind">8.46 MPH</span></p>
+          <p>Humidity: <span id="humidity">44%</span>
+        </div>
+        <div class="forcast" id="day02">
+          <h4 id="date2">4/25/2023</h4>
+          <h4 class="icon" id="icon2">ICON</h4>
+          <p>Temp: <span id="temp2">76.62°F</span></p>
+          <p>Wind: <span id="wind2">8.46 MPH</span></p>
+          <p>Humidity: <span id="humidity2">44%</span>
+        </div>
+        <div class="forcast" id="day03">
+          <h4 id="date3">4/25/2023</h4>
+          <h4 class="icon" id="icon3">ICON</h4>
+          <p>Temp: <span id="temp3">76.62°F</span></p>
+          <p>Wind: <span id="wind3">8.46 MPH</span></p>
+          <p>Humidity: <span id="humidity3">44%</span>
+        </div>
+        <div class="forcast" id="day04">
+          <h4 id="date4">4/25/2023</h4>
+          <h4 class="icon" id="icon4">ICON</h4>
+          <p>Temp: <span id="temp4">76.62°F</span></p>
+          <p>Wind: <span id="wind4">8.46 MPH</span></p>
+          <p>Humidity: <span id="humidity4">44%</span>
+        </div>
+        <div class="forcast" id="day05">
+          <h4 id="date5">4/25/2023</h4>
+          <h4 class="icon" id="icon5">ICON</h4>
+          <p>Temp: <span id="temp5">76.62°F</span></p>
+          <p>Wind: <span id="wind5">8.46 MPH</span></p>
+          <p>Humidity: <span id="humidity5">44%</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

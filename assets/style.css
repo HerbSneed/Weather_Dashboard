@@ -1,0 +1,102 @@
+h3{
+  margin-top: 5px;
+  color: black;
+}
+
+h4{
+  margin-top: 5px;
+  color: white;
+}
+
+.weather_header{
+  width: 100%;
+  height: 30px;
+  top: 0;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.container{
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.citySearch{
+  width: 25%;
+  height: 100vh;
+  border: 2px solid black;
+  padding: 5px 5px;
+}
+
+.citySearch input{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.citySearch button{
+  margin-top: 10px;
+  width: 100%;
+}
+
+.citySearch hr{
+  margin-top: 10px;
+}
+
+.cityInfoContainer{
+  margin-left: 10px;
+  width: 65%;
+  height: 100vh;
+}
+
+.city{
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+  background-color: gray;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 2px;
+}
+
+.cityInfo{
+  margin-top: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 2px solid black;
+  height: 120px;
+}
+
+.cityInfo p{
+  color: black;
+  font-size: .7rem;
+  margin-top: 15px;
+}
+
+.fiveDay{
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  height: 170px;
+  justify-content: space-between;
+}
+
+.forcast{
+  width: 18%;
+  height: 170px;
+  padding: 5px 5px 5px 5px;
+  background-color: darkblue;
+}
+
+.icon{
+  margin: 10px 0;
+}
+
+.forcast p{
+  font-size: .7rem;
+  margin-top: 15px;
+}
+
