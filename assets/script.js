@@ -2,10 +2,12 @@ var citySearchInput = document.getElementById('citySearchJS')
 var searchContainer = document.getElementById('searchContainerJS');
 var citySearchBtn = document.getElementById('searchSubbtnJS');
 var featureCity = document.getElementById('city');
+var forecastVis = document.getElementById('forecastDiv');
 
 var search = function(event) {
   event.preventDefault()
   var cityName = citySearchInput.value.trim();
+  forecastVis.setAttribute("style", "display: block");
   // console.log(cityName);
   if (cityName) {
     getCityWeather(cityName);
@@ -74,9 +76,6 @@ var getCityForcast = function(cityN) {
   }
 
   var displayForcast = function(forecast) {
-
-    console.log(forecast)
-
     var day1Icon = forecast.list[3].weather[0].icon;
     var day1IconUrl = "https://openweathermap.org/img/w/" + day1Icon + ".png";
     var day1IconDisplay = document.getElementById('icon1');
