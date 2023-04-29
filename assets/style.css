@@ -91,11 +91,13 @@ h4{
 }
 
 .icon{
-  margin: 10px 0;
+  margin-left: 10px;
+  height: 35px;
+  width: 35px;
 }
 
 .forcast p{
   font-size: .7rem;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
