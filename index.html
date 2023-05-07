@@ -7,6 +7,8 @@
   <title>Weather Dashboard</title>
   <link href="./assets/reset.css" rel="stylesheet">
   <link href="./assets/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script>dayjs().format()</script>
 </head>
 <body>
   <header class="weather_header">
@@ -21,12 +23,13 @@
       </form>
       <div id="searchContainerJS">
       <hr>
-      <!-- <div class="city" id="cityJS">Atlanta</div> -->
     </div>
     </div>
+
     <div class="cityInfoContainer">
       <div class="cityInfo" id="cityInfoJS">
-        <h2 id="city"><span id="date">(4/25/2023)</span></h2>
+        <h2 id="city">
+        <h2 id="currentDate"></h2>
         <p>Temp: <span id="currentTempJS"></span></p>
         <p>Wind: <span id="currentWindJS"></span></p>
         <p>Humidity: <span id="currentHumidiyJS">44%</span>
@@ -35,7 +38,7 @@
       <h3>5 - Day Forcast</h3>
       <div class="fiveDay" id="fiveDayJS">
         <div class="forcast" id="day01">
-          <h4 id="date">4/25/2023</h4>
+          <h4 id="date1"></h4>
           <i class="icon" id="icon1"></i>
           <p>Temp: <span id="temp1"></span></p>
           <p>Wind: <span id="wind1"></span></p>
@@ -43,28 +46,28 @@
         </div>
         <div class="forcast" id="day02">
           <h4 id="date2">4/25/2023</h4>
-          <i id="icon2">ICON</i>
+          <i class="icon" id="icon2">ICON</i>
           <p>Temp: <span id="temp2"></span></p>
           <p>Wind: <span id="wind2"></span></p>
           <p>Humidity: <span id="humidity2"></span>
         </div>
         <div class="forcast" id="day03">
           <h4 id="date3">4/25/2023</h4>
-          <i id="icon3">ICON</i>
+          <i class="icon" id="icon3">ICON</i>
           <p>Temp: <span id="temp3"></span></p>
           <p>Wind: <span id="wind3"></span></p>
           <p>Humidity: <span id="humidity3"></span>
         </div>
         <div class="forcast" id="day04">
           <h4 id="date4">4/25/2023</h4>
-          <i class="01n"></i>
+          <i class="icon" id="icon4"></i>
           <p>Temp: <span id="temp4"></span></p>
           <p>Wind: <span id="wind4"></span></p>
           <p>Humidity: <span id="humidity4"></span>
         </div>
         <div class="forcast" id="day05">
           <h4 id="date5">4/25/2023</h4>
-          <i id="icon5">ICON</i>
+          <i class="icon" id="icon5">ICON</i>
           <p>Temp: <span id="temp5"></span></p>
           <p>Wind: <span id="wind5"></span></p>
           <p>Humidity: <span id="humidity5"></span>
@@ -74,5 +77,6 @@
     </div>
   </main>
   <script src="./assets/script.js"></script>
+  
 </body>
 </html>
