@@ -28,5 +28,6 @@ CSS, HTML, JavaScript & Open Weather API
 ## Links
 ```
 GitHub - 
-Live site - 
+```
+Live site - https://herbsneed.github.io/Weather_Dashboard/ 
 ```
