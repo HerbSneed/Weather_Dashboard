@@ -1,20 +1,49 @@
+
+
 var citySearchInput = document.getElementById('citySearchJS')
 var searchContainer = document.getElementById('searchContainerJS');
 var citySearchBtn = document.getElementById('searchSubbtnJS');
 var featureCity = document.getElementById('city');
 var forecastVis = document.getElementById('forecastDiv');
 var today = dayjs().format('MM/DD/YYYY');
+var userCities = [];
 
+function citiesSearched() {
+  var cityLs = JSON.parse(localStorage.getItem("Cities"));
+
+  for (var i = 0; i < cityLs.length; i++) {
+    var oldCities = document.createElement('button');
+    oldCities.classList.add('city');
+    oldCities.innerHTML = cityLs[i];
+    cityName = cityLs[i];
+    searchContainer.appendChild(oldCities);  
+    oldCities.addEventListener('click', function() {
+    cityName = this.textContent;
+    getCityWeather(cityName);
+    getCityForcast(cityName);
+    forecastVis.setAttribute("style", "display: block");
+  });
+}
+}
 
 var search = function(event) {
   event.preventDefault()
   var cityName = citySearchInput.value.trim();
-  forecastVis.setAttribute("style", "display: block");
-  // console.log(cityName);
   if (cityName) {
-    getCityWeather(cityName);
-    getCityForcast(cityName);
-    citySearchInput.value = '';
+    userCities.push(cityName);
+    var empty = userCities.indexOf('');
+    if (empty !== -1) {
+      userCities.splice(empty,1); 
+    }
+  localStorage.setItem("Cities", JSON.stringify(userCities));
+  forecastVis.setAttribute("style", "display: block");
+  var cities = document.createElement('button');
+  cities.classList.add('city');
+  cities.innerHTML = cityName;
+  searchContainer.appendChild(cities);
+  getCityWeather(cityName);
+  getCityForcast(cityName);
+  citySearchInput.value = '';
   }else{
     alert('Please enter a city');
   }
@@ -68,7 +97,6 @@ var getCityForcast = function(cityN) {
         response.json()
           .then(function(data) {
             displayForcast(data, cityN);
-            console.log(data)
           })
       } else{
         alert('Error: ' + response.statusText);
@@ -77,7 +105,7 @@ var getCityForcast = function(cityN) {
     .catch(function(error) {
       alert('Unable to connect to Open Weather API');
     })
-  }
+}
 
   var displayForcast = function(forecast) {
     // Day 1 Forcast
@@ -87,7 +115,6 @@ var getCityForcast = function(cityN) {
     var day1IconUrl = "https://openweathermap.org/img/w/" + day1Icon + ".png";
     var day1IconDisplay = document.getElementById('icon1');
     day1IconDisplay.innerHTML = `<img src="${day1IconUrl}">`;
-    console.log(day1IconDisplay)
 
     var day1Temp = forecast.list[6].main.temp;
     var day1TempDisplay = document.getElementById('temp1');
@@ -181,6 +208,6 @@ var getCityForcast = function(cityN) {
     var day5HumidityDisplay = document.getElementById('humidity5');
     day5HumidityDisplay.innerHTML = day5Humidity + '%';
     
-  }
+}
 
 citySearchBtn.addEventListener('click', search);
