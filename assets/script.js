@@ -62,6 +62,7 @@ var getCityWeather = function (cityN) {
       if (response.ok) {
         response.json().then(function (data) {
           displayCurrentWeather(data, cityN);
+          console.log(data)
         });
       } else {
         alert("Error: " + response.statusText);
@@ -79,6 +80,13 @@ var displayCurrentWeather = function (weather, searchTerm) {
     return;
   } else {
     featureCity.innerHTML = searchTerm + " - ";
+    var currentDayIcon = weather.weather[0].icon;
+    console.log(currentDayIcon);
+    var currentDayIconUrl = "https://openweathermap.org/img/w/" + currentDayIcon + ".png";
+    var currentDayIconDisplay = document.getElementById("iconCurrent");
+    currentDayIconDisplay.innerHTML = `<img src="${currentDayIconUrl}">`;
+    currentDayIconDisplay.setAttribute('style', 'position: absolute')
+
     var currentDay = document.getElementById("currentDate");
     currentDay.innerHTML = today.toString();
     var currentTemp = weather.main.temp;

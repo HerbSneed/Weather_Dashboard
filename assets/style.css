@@ -105,6 +105,10 @@ button:active {
   height: 120px;
 }
 
+.cityInfo h2 {
+  margin-top: 15px
+}
+
 .cityInfo p {
   color: black;
   font-size: .7rem;
