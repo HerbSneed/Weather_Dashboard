@@ -12,6 +12,24 @@ h4 {
   color: white;
 }
 
+button {
+  border: none;
+}
+
+button:active {
+  background-color: lightyellow;
+  border: none;
+}
+
+button:hover {
+  border-color: blue;
+  border: 1px solid blue;
+}
+
+#forecastDiv {
+  display: none;
+}
+
 .searchBtn {
   background-color: #6991E3;
   color: white;
@@ -23,17 +41,8 @@ h4 {
   background-color: blue;
 }
 
-button {
+.searchBtn:hover {
   border: none;
-}
-
-button:active {
-  background-color: lightyellow;
-  border: none;
-}
-
-#forecastDiv {
-  display: none;
 }
 
 .weather_header {
@@ -96,6 +105,7 @@ button:active {
 .city:active {
   background-color: lightyellow;
 }
+
 
 .cityInfo {
   margin-top: 10px;
