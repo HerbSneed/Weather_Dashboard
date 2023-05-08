@@ -12,14 +12,38 @@ h4{
   color: white;
 }
 
+.searchBtn{
+  background-color: #6991E3;
+  color: white;
+  border-radius: 2px;
+  border: none;
+}
+
+.searchBtn:active{
+  background-color: blue;
+}
+
+button{
+  border: none;
+}
+
+button:active{
+  background-color: lightyellow;
+  border: none;
+}
+
 .weather_header{
   width: 100%;
   height: 30px;
   top: 0;
   color: white;
-  background-color: blue;
-  text-align: center;
+  background-image: linear-gradient(to right, blue, purple);
   padding-top: 6px;
+}
+
+.weather_header h1{
+  float: right;
+  margin-right: 300px;
 }
 
 .container{
@@ -59,10 +83,13 @@ h4{
   width: 100%;
   height: 25px;
   margin-top: 10px;
-  background-color: gray;
+  background-color: #AEAEAE;
   text-align: center;
   padding-top: 5px;
   border-radius: 2px;
+}
+.city:active{
+  background-color: lightyellow;
 }
 
 .cityInfo{
@@ -89,19 +116,17 @@ h4{
   width: 100%;
   height: 170px;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .forcast{
   width: 18%;
   height: 170px;
   padding: 5px 5px 5px 5px;
-  background-color: darkblue;
-}
-
-.icon{
-  margin-left: 10px;
-  height: 35px;
-  width: 35px;
+  background-color: #323D4F;
+  text-align: center;
+  border-radius: 2px;
 }
 
 .forcast p{
