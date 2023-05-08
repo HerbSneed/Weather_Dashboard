@@ -221,4 +221,3 @@ var displayForcast = function (forecast) {
 
 // Event Listener for search button
 citySearchBtn.addEventListener("click", search);
-

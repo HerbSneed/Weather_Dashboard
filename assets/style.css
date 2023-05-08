@@ -1,38 +1,42 @@
-h2{
+h2 {
   display: inline;
 }
 
-h3{
+h3 {
   margin-top: 5px;
   color: black;
 }
 
-h4{
+h4 {
   margin-top: 5px;
   color: white;
 }
 
-.searchBtn{
+.searchBtn {
   background-color: #6991E3;
   color: white;
   border-radius: 2px;
   border: none;
 }
 
-.searchBtn:active{
+.searchBtn:active {
   background-color: blue;
 }
 
-button{
+button {
   border: none;
 }
 
-button:active{
+button:active {
   background-color: lightyellow;
   border: none;
 }
 
-.weather_header{
+#forecastDiv {
+  display: none;
+}
+
+.weather_header {
   width: 100%;
   height: 30px;
   top: 0;
@@ -41,45 +45,45 @@ button:active{
   padding-top: 6px;
 }
 
-.weather_header h1{
+.weather_header h1 {
   float: right;
   margin-right: 300px;
 }
 
-.container{
+.container {
   display: flex;
   position: relative;
   height: 100vh;
   width: 100%;
 }
 
-.citySearch{
+.citySearch {
   width: 25%;
   height: 100vh;
   padding: 5px 5px;
 }
 
-.citySearch input{
+.citySearch input {
   margin-top: 5px;
   width: 100%;
 }
 
-.citySearch button{
+.citySearch button {
   margin-top: 10px;
   width: 100%;
 }
 
-.citySearch hr{
+.citySearch hr {
   margin-top: 10px;
 }
 
-.cityInfoContainer{
+.cityInfoContainer {
   margin-left: 10px;
   width: 65%;
   height: 100vh;
 }
 
-.city{
+.city {
   width: 100%;
   height: 25px;
   margin-top: 10px;
@@ -88,11 +92,12 @@ button:active{
   padding-top: 5px;
   border-radius: 2px;
 }
-.city:active{
+
+.city:active {
   background-color: lightyellow;
 }
 
-.cityInfo{
+.cityInfo {
   margin-top: 10px;
   padding: 5px;
   width: 100%;
@@ -100,17 +105,13 @@ button:active{
   height: 120px;
 }
 
-.cityInfo p{
+.cityInfo p {
   color: black;
   font-size: .7rem;
   margin-top: 15px;
 }
 
-#forecastDiv{
-  display: none;
-}
-
-.fiveDay{
+.fiveDay {
   display: flex;
   margin-top: 10px;
   width: 100%;
@@ -120,7 +121,7 @@ button:active{
   align-content: center;
 }
 
-.forcast{
+.forcast {
   width: 18%;
   height: 170px;
   padding: 5px 5px 5px 5px;
@@ -129,8 +130,7 @@ button:active{
   border-radius: 2px;
 }
 
-.forcast p{
+.forcast p {
   font-size: .7rem;
   margin-top: 10px;
 }
-
