@@ -7,7 +7,7 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 ## Funtion
-The USER is present with a blank dashboard with an option to search for a city.
+The USER is presented with a blank dashboard with an option to search for a city.
 WHEN the USER searchs for a city
 THEN the USER is presented with current and future conditions for that city and that city is added to the search history
 WHEN the USER views current weather conditions for that city
