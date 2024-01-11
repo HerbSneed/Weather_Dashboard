@@ -23,7 +23,8 @@ CSS, HTML, JavaScript & Open Weather API
 ```
 ## Screenshot
 ```
-![Screenshot 2023-05-08 at 2 38 36 PM](https://user-images.githubusercontent.com/105166208/236904625-bac4252a-38ac-4544-995f-dbd42113359c.png)
+![Screenshot 2024-01-11 at 3 01 35 PM](https://github.com/HerbSneed/Weather_Dashboard/assets/105166208/87503ae8-a4ba-48d7-a36a-1080c534c94d)
+
 ```
 ## Links
 ```
