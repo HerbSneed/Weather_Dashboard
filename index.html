@@ -8,10 +8,9 @@
   <link href="./assets/reset.css" rel="stylesheet">
   <link href="./assets/style.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-  <script>dayjs().format()</script>
 </head>
 
-<body onload="citiesSearched()">
+<body onload=citiesSearched()>
   <header class="weather_header">
     <h1>Weather Dashboard</h1>
   </header>
@@ -19,7 +18,7 @@
   <main class="container">
     <div class="citySearch">
       <form>
-        <h2>Search for a City</h2>
+        <h2>Search City by State</h2>
         <input name="mycity" type="text" id="citySearchJS" value="">
         <button class="searchBtn" id="searchSubbtnJS" type="button"  >Search</button>
       </form>
@@ -30,12 +29,12 @@
 
     <div class="cityInfoContainer">
         <div class="cityInfo" id="cityInfoJS">
-          <h2 id="city">
+          <h2 id="city"></h2>
           <h2 id="currentDate"></h2>
           <i class="icon" id="iconCurrent"></i>
           <p>Temp: <span id="currentTempJS"></span></p>
           <p>Wind: <span id="currentWindJS"></span></p>
-          <p>Humidity: <span id="currentHumidiyJS">44%</span>
+          <p>Humidity: <span id="currentHumidiyJS"></span>
         </div>
 
         <div id="forecastDiv">
@@ -52,23 +51,23 @@
           </div>
 
           <div class="forcast" id="day02">
-            <h4 id="date2">4/25/2023</h4>
-            <i class="icon" id="icon2">ICON</i>
+            <h4 id="date2"></h4>
+            <i class="icon" id="icon2"></i>
             <p>Temp: <span id="temp2"></span></p>
             <p>Wind: <span id="wind2"></span></p>
             <p>Humidity: <span id="humidity2"></span>
           </div>
 
           <div class="forcast" id="day03">
-            <h4 id="date3">4/25/2023</h4>
-            <i class="icon" id="icon3">ICON</i>
+            <h4 id="date3"></h4>
+            <i class="icon" id="icon3"></i>
             <p>Temp: <span id="temp3"></span></p>
             <p>Wind: <span id="wind3"></span></p>
             <p>Humidity: <span id="humidity3"></span>
           </div>
 
           <div class="forcast" id="day04">
-            <h4 id="date4">4/25/2023</h4>
+            <h4 id="date4"></h4>
             <i class="icon" id="icon4"></i>
             <p>Temp: <span id="temp4"></span></p>
             <p>Wind: <span id="wind4"></span></p>
@@ -76,8 +75,8 @@
           </div>
 
           <div class="forcast" id="day05">
-            <h4 id="date5">4/25/2023</h4>
-            <i class="icon" id="icon5">ICON</i>
+            <h4 id="date5"></h4>
+            <i class="icon" id="icon5"></i>
             <p>Temp: <span id="temp5"></span></p>
             <p>Wind: <span id="wind5"></span></p>
             <p>Humidity: <span id="humidity5"></span>

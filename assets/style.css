@@ -1,3 +1,5 @@
+
+
 h2 {
   display: inline;
 }
@@ -70,6 +72,7 @@ button.clearButton:hover {
   color: white;
   background-image: linear-gradient(to right, blue, purple);
   padding-top: 6px;
+  float: right;
 }
 
 .weather_header h1 {
@@ -85,7 +88,7 @@ button.clearButton:hover {
 }
 
 .citySearch {
-  width: 25%;
+  width: 20%;
   height: 100vh;
   padding: 5px 5px;
 }
@@ -105,8 +108,8 @@ button.clearButton:hover {
 }
 
 .cityInfoContainer {
-  margin-left: 3px;
-  width: 75%;
+  margin-left: 5px;
+  width: 79%;
   height: 100vh;
 }
 
